@@ -29,7 +29,7 @@ allprojects {
 ```gradle
 dependencies {
        ...
-       implementation 'com.github.leodan11:MoneyTextView:Tag'
+       implementation 'com.github.leodan11:SignatureView:Tag'
 }
 ```
 
