@@ -13,25 +13,55 @@ Credits go completely to its creator and the people who has contributed with tho
 
 # Setup
 
-* Step 1. Add the JitPack repository to your build file
+<details>
+  <summary>Gradle</summary>
 
-```gradle
-allprojects {
-  repositories {
-    ...
-    maven { url 'https://jitpack.io' }
+- Step 1. Add the JitPack repository to your build file
+
+  Add it in your root build.gradle at the end of repositories:
+
+  ```gradle
+  allprojects {
+    repositories {
+      ...
+      maven { url 'https://jitpack.io' }
+      }
+  }
+  ```
+
+- Step 2. Add the dependency
+  
+  ```gradle
+  dependencies {
+    implementation 'com.github.leodan11:SignatureView:Tag'
+  }
+  ```
+  
+</details>
+
+<details>
+    <summary>Kotlin</summary>
+
+  - Step 1. Add the JitPack repository to your build file.
+
+    Add it in your root build.gradle at the end of repositories:
+
+    ```kotlin
+    repositories {
+        ...
+        maven(url = "https://jitpack.io")
     }
-}
-```
+    ```
 
-* Step 2. Add the dependency
-
-```gradle
-dependencies {
-       ...
-       implementation 'com.github.leodan11:SignatureView:Tag'
-}
-```
+- Step 2. Add the dependency
+  
+    ```kotlin
+    dependencies {
+      implementation("com.github.leodan11:SignatureView:$Tag")
+    }
+    ```
+  
+</details>
 
 ## Attributes
 
