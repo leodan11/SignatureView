@@ -95,10 +95,10 @@ SignatureView offers several attributes for a deeper view configuration, the fol
         android:id="@+id/signature_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:signature_view_toBackgroundColor="?attr/backgroundColor"
-        app:signature_view_toEnable="true"
-        app:signature_view_toPenColor="?attr/colorPrimary"
-        app:signature_view_toPenSize="3dp" />
+        app:toBackgroundColor="?attr/backgroundColor"
+        app:toEnable="true"
+        app:toPenColor="?attr/colorPrimary"
+        app:toPenSize="3dp" />
 ~~~
 
 ## Code

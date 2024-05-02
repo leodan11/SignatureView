@@ -79,10 +79,10 @@ public class SignatureView extends View {
     private void init(Context context) {
 
         try {
-            backgroundColor = typedArray.getColor(R.styleable.SignatureView_signature_view_toBackgroundColor, Color.WHITE);
-            penColor = typedArray.getColor(R.styleable.SignatureView_signature_view_toPenColor, Color.BLACK);
-            penSize = typedArray.getDimension(R.styleable.SignatureView_signature_view_toPenSize, context.getResources().getDimension(R.dimen.pen_size));
-            enableSignature = typedArray.getBoolean(R.styleable.SignatureView_signature_view_toEnable, true);
+            backgroundColor = typedArray.getColor(R.styleable.SignatureView_toBackgroundColor, Color.WHITE);
+            penColor = typedArray.getColor(R.styleable.SignatureView_toPenColor, Color.BLACK);
+            penSize = typedArray.getDimension(R.styleable.SignatureView_toPenSize, context.getResources().getDimension(R.dimen.pen_size));
+            enableSignature = typedArray.getBoolean(R.styleable.SignatureView_toEnable, true);
         } finally {
             typedArray.recycle();
         }

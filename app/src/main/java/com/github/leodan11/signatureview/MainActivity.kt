@@ -18,9 +18,14 @@ class MainActivity : AppCompatActivity() {
         binding.action.setOnClickListener {
             if (binding.value.isBitmapEmpty) {
                 Toast.makeText(applicationContext, "Empty", Toast.LENGTH_LONG).show()
-            }else {
+            } else {
                 binding.view.setImageBitmap(binding.value.signatureBitmap)
             }
+        }
+
+        binding.actionTwo.setOnClickListener {
+            binding.value.clearCanvas()
+            binding.view.setImageResource(R.drawable.ic_launcher_background)
         }
 
     }
