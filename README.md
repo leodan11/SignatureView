@@ -83,7 +83,8 @@ all these options and their default value.
     android:layout_height="wrap_content"
     app:toBackgroundColor="?attr/backgroundColor"
     app:toEnable="true"
-    app:toPenColor="?attr/colorPrimary" app:toPenSize="3dp" />
+    app:toPenColor="?attr/colorPrimary"
+    app:toPenSize="3dp" />
 ~~~
 
 ## Code
