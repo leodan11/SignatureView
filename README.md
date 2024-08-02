@@ -66,8 +66,10 @@ all these options and their default value.
 
 ~~~xml                                            
 
-<com.github.leodan11.view.SignatureView android:id="@+id/signature_view"
-    android:layout_width="match_parent" android:layout_height="wrap_content" />
+<com.github.leodan11.view.SignatureView
+    android:id="@+id/signature_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
 
 ~~~
 
@@ -75,9 +77,12 @@ all these options and their default value.
 
 ~~~xml
 
-<com.github.leodan11.view.SignatureView android:id="@+id/signature_view"
-    android:layout_width="match_parent" android:layout_height="wrap_content"
-    app:toBackgroundColor="?attr/backgroundColor" app:toEnable="true"
+<com.github.leodan11.view.SignatureView
+    android:id="@+id/signature_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:toBackgroundColor="?attr/backgroundColor"
+    app:toEnable="true"
     app:toPenColor="?attr/colorPrimary" app:toPenSize="3dp" />
 ~~~
 
