@@ -425,12 +425,11 @@ public class SignatureView extends View {
 
     @Override
     public void onRestoreInstanceState(Parcelable state) {
-        if (!(state instanceof SavedState)) {
+        if (!(state instanceof SavedState ss)) {
             super.onRestoreInstanceState(state);
             return;
         }
 
-        SavedState ss = (SavedState) state;
         super.onRestoreInstanceState(ss.getSuperState());
         setBitmap(ss.bitmap);
     }
@@ -466,7 +465,7 @@ public class SignatureView extends View {
         }
 
         public static final Parcelable.Creator<SavedState> CREATOR =
-                new Parcelable.Creator<SavedState>() {
+                new Parcelable.Creator<>() {
                     public SavedState createFromParcel(Parcel in) {
                         return new SavedState(in);
                     }
